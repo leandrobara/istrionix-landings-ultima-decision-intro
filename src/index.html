@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Istrionix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
-    Istrionix producciones presenta...
+<body class="min-h-screen text-slate-100" style="background-color:#0f0f12;">
+    <main class="flex min-h-screen flex-col items-center justify-center gap-12 px-4 py-10">
+        <h1 class="text-center text-4xl font-bold tracking-wide text-white" style="font-family:'Playfair Display', serif;">
+            La última decisión
+        </h1>
+        <div class="flex w-full max-w-sm flex-col items-center gap-2">
+            <form class="w-full rounded-2xl p-6 shadow-2xl shadow-black/50 backdrop-blur"
+                style="background-color:#1b1b21;">
+                <h1 class="mb-6 text-2xl font-semibold" style="color:#f4f4f4;">
+                    Dejanos tus datos
+                </h1>
+
+                <label class="mb-1 text-sm font-medium" style="color:#c9c9d1;" for="name">Nombre</label>
+                <input
+                    class="mb-4 w-full rounded-lg border px-4 py-3 text-base focus:outline-none focus:ring"
+                    style="border-color:#2c2c35; background-color:#14141a; color:#f4f4f4;"
+                    type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label class="mb-1 text-sm font-medium" style="color:#c9c9d1;" for="email">Email</label>
+                <input
+                    class="mb-5 w-full rounded-lg border px-4 py-3 text-base focus:outline-none focus:ring"
+                    style="border-color:#2c2c35; background-color:#14141a; color:#f4f4f4;"
+                    type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+                <button
+                    class="mb-4 w-full rounded-lg px-4 py-3 text-base font-semibold uppercase tracking-wider text-white transition-transform hover:brightness-110 focus:outline-none focus:ring"
+                    style="background-color:#ff3d71;"
+                    type="submit">
+                    Enviar
+                </button>
+
+                <p class="text-center text-xs uppercase tracking-widest" style="color:#38bdf8;">Ir a comprar entradas</p>
+            </form>
+            <p class="text-center text-xs tracking-wide" style="color:#c9c9d1;">Istrionix producciones</p>
+        </div>
+    </main>
 </body>
 </html>
